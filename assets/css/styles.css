@@ -1,19 +1,29 @@
+:root {
+    --dark: #410c3e;
+    --light: #c5c3c5;
+    --style-color: #b8a6b5;
+    --accent-color: #9f4c94;
+  }
+
 * {
-    font-family: Arial, Helvetica, sans-serif
-    ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--light);
 }
 
 h1 {
-    color: black;
-    background-color: white;
+    color: var(--dark);
+    background-color: var(--light);
     text-align: center;
     padding: 10px 0;
-    border: 1px solid black;
-    margin: 5px 0;
+    border: 1px solid var(--dark);
+    margin: 10px 0;
 }
 
 .cards-header {
-    background-color: gainsboro;
+    background-color: var(--style-color);
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -23,10 +33,10 @@ h1 {
 
 h2 {
     text-align: center;
-    border: 1px solid black;
-    min-width: 1000px;
-    width: fit-content;
-    padding: 10px;
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    width: fit-content(20em);
+    padding: 10px 20px;
     margin: 5px 0px;
 }
 
@@ -36,14 +46,14 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: gainsboro;
+    background-color: var(--style-color);
 }
 
 .card {
     display: flex;
     justify-content: center;
     max-width: 100px;
-    margin: 0 130px;
+    margin: 0 150px;
 }
 
 .title-parent {
@@ -55,19 +65,25 @@ h2 {
 
 .card-title {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--dark);
     padding: 4px;
-    background-color: white;
+    background-color: var(--light);
     min-width: 250px;
     min-height: 35px;
     position: relative;
+    color: var(--dark);
+}
+
+p {
+    color: var(--dark);
 }
 
 .card-subheader {
-    border: 1px solid black;
+    border: 1px solid var(--dark);
     padding: 35px 20px 90px 20px;
     min-width: 350px;
     min-height: 100px;
+    color: var(--dark);
 }
 
 .snippet-parent {
@@ -78,23 +94,25 @@ h2 {
 }
 
 .code-snippet {
-    border: 1px solid black;
-    background-color: gray;
+    border: 1px solid var(--dark);
+    background-color: var(--accent-color);
     padding: 24px 140px;
+    color: var(--dark);
 }
 
 footer {
-    background-color: white;
+    background-color: var(--light);
     padding: 5px 0;
     display: flex;
     text-align: center;
     justify-content: center;
     position: relative;
+    color: var(--dark)
 }
 
 h3 {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--dark);
     width: 100%;
     min-height: 40px;
     padding: 10px 0;
